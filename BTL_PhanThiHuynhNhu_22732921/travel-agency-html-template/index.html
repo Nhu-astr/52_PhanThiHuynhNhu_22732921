@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FlyTour</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>9/1A, Lê Duẩn, Quận 1, TP.Hồ Chí Minh</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+097 366 254</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>flytours@gmail.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Fly Tours</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Tours</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="destination.html" class="dropdown-item">Tour trong nước</a>
+                            <a href="package.html" class="dropdown-item">Tour ngoài nước</a>
+
+                        </div>
+                    </div>
+                    <a href="booking.html" class="nav-item nav-link">Book</a>
+                    <a href="new.html" class="nav-item nav-link">News</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="sitemap.html" class="nav-item nav-link">Sitemap</a>
+                </div>
+                <div class="DKDN">
+                    <a href="dangnhap.html" class="btn btn-primary rounded-pill py-2 px-4" id="DN">Đăng nhập</a>
+
+                </div>
+
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white mb-3 animated slideInDown">Tận hưởng kỳ nghỉ của bạn cùng chúng tôi</h1>
+                        <p class="fs-4 text-white mb-4 animated slideInDown">"DU LỊCH KHIẾN BẠN TỪ NGƯỜI KHÔNG NÓI NÊN LỜI TRỞ THÀNH KẺ KỂ CHUYỆN"</p>
+                        <div class="position-relative w-75 mx-auto animated slideInDown">
+                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text" placeholder="TÌM KIẾM THÔNG TIN">
+                            <button type="button" class="btn btn-primary rounded-pill py-2 px-4 position-absolute top-0 end-0 me-2" style="margin-top: 7px;">Search</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+
+
+
+
+
+    <!-- Destination Start -->
+    <div class="container-xxl py-5 destination">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Destination</h6>
+                <h1 class="mb-5">Top điểm đến được yêu thích</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-7 col-md-6">
+                    <div class="row g-3">
+                        <div class="col-lg-12 col-md-12 wow zoomIn" data-wow-delay="0.1s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="../travel-agency-html-template/img/Bali.png" alt="">
+                                <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">30% OFF</div>
+                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Bali</div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.3s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="../travel-agency-html-template/img/TOUR-BO-DONG-HOA-KY.jpg" alt="">
+                                <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">25% OFF</div>
+                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">New York</div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
+                            <a class="position-relative d-block overflow-hidden" href="">
+                                <img class="img-fluid" src="../travel-agency-html-template/img/du-lich-NB.png" alt="">
+                                <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">35% OFF</div>
+                                <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Nhật Bản</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
+                    <a class="position-relative d-block h-100 overflow-hidden" href="">
+                        <img class="img-fluid position-absolute w-100 h-100" src="../travel-agency-html-template/img/PHÁP.jpg" alt="" style="object-fit: cover;">
+                        <div class="bg-white text-danger fw-bold position-absolute top-0 start-0 m-3 py-1 px-2">20% OFF</div>
+                        <div class="bg-white text-primary fw-bold position-absolute bottom-0 end-0 m-3 py-1 px-2">Pháp</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Destination Start -->
+
+
+    <!-- Package Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">TOURS</h6>
+                <h1 class="mb-5">TOURS NỔI BẬT</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="../travel-agency-html-template/img/Bali.png" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Đảo Bali - Thiên đường nghỉ dưỡng</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>4 ngày 3 đêm</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 người</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">10,990,000 VNĐ</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>"Khám phá vẻ đẹp quyến rũ của đảo Bali – Thiên đường nhiệt đới với bãi biển tuyệt đẹp, văn hóa độc đáo và những trải nghiệm phiêu lưu thú vị."</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="tourchitiet2.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Xem thêm</a>
+                                <a href="booking.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Đặt tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="../travel-agency-html-template/img/nhật bản.png" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Du lịch Hè Nhật Bản</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>5 ngày 4 đêm</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">26.900.000VND</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>"Trải nghiệm chuyến du lịch đến Nhật Bản – đất nước mặt trời mọc với cảnh sắc thiên nhiên tuyệt đẹp, văn hóa truyền thống phong phú và nền ẩm thực đặc sắc."</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="tourchitiet2.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Xem thêm</a>
+                                <a href="booking.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Đặt tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="../travel-agency-html-template/img/tour-bali-4N3.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Australia</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>6 ngày 5 đêm</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">46.990.000VND</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>
+                                "Khám phá Australia – xứ sở của những bãi biển tuyệt đẹp, thiên nhiên hoang dã đa dạng và các thành phố sôi động với nền văn hóa đa sắc màu."</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="tourchitiet2.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Xem thêm</a>
+                                <a href="booking.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Đặt Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--2-->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">TOURS</h6>
+                <h1 class="mb-5">TOURS KHUYẾN MÃI</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="../travel-agency-html-template/img/tour-han-quoc-mua-hoa-anh-dao-5n4d.png" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>-4% 0
+                                Khám phá Hàn Quốc mùa hoa anh đào 2023</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>5 ngày 4 đêm</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 người</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">17,890,000 VNĐ</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>"Trải nghiệm mùa hoa anh đào tuyệt đẹp tại Hàn Quốc – khi những con đường và công viên được phủ đầy sắc hồng trắng, tạo nên khung cảnh lãng mạn và quyến rũ khó quên."</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="tourchitiet.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Xem thêm</a>
+                                <a href="booking.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Đặt tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="../travel-agency-html-template/img/tour-han-quoc-tet-duong-lich-2024.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Tour Hàn Quốc đón Tết Dương lịch 2024</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>5 ngày 4 đêm</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">17,890,000 VNĐ</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>"Trải nghiệm tour Tết Hàn Quốc – hành trình khám phá văn hóa truyền thống đặc sắc trong dịp lễ Seollal. Du khách sẽ có cơ hội hòa mình vào không khí lễ hội nhộn nhịp, thưởng thức các món ăn Tết truyền thống</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="tourchitiet.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Xem thêm</a>
+                                <a href="booking.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Đặt Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="package-item">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="../travel-agency-html-template/img/tour-han-mien-visa-1.jpg" alt="">
+                        </div>
+                        <div class="d-flex border-bottom">
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-map-marker-alt text-primary me-2"></i>Du lịch Hàn Quốc ngắm hoa anh đào (Tour Miễn Visa)</small>
+                            <small class="flex-fill text-center border-end py-2"><i class="fa fa-calendar-alt text-primary me-2"></i>5 ngày 4 đêm</small>
+                            <small class="flex-fill text-center py-2"><i class="fa fa-user text-primary me-2"></i>2 Person</small>
+                        </div>
+                        <div class="text-center p-4">
+                            <h3 class="mb-0">13,900,000 VNĐ</h3>
+                            <div class="mb-3">
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                                <small class="fa fa-star text-primary"></small>
+                            </div>
+                            <p>
+
+                                "Trải nghiệm mùa hoa anh đào tuyệt đẹp tại Hàn Quốc – khi những con đường và công viên được phủ đầy sắc hồng trắng, tạo nên khung cảnh lãng mạn và quyến rũ khó quên."</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <a href="tourchitiet.html" class="btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;">Xem thêm</a>
+                                <a href="booking.html" class="btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">Đặt Tour</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Package End -->
+
+
+    <!-- Booking Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="booking p-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-md-6 text-white">
+                        <h6 class="text-white text-uppercase">Booking</h6>
+                        <h1 class="text-white mb-4">Đặt ngay</h1>
+                        <p class="mb-4">Trải nghiệm những tour du lịch vòng quanh thế giới với những dịch vụ cao cấp nhất</p>
+
+                        <a class="btn btn-outline-light py-3 px-5 mt-2" href="booking.html">Read More</a>
+                    </div>
+                    <div class="col-md-6">
+                        <h1 class="text-white mb-4">Book A Tour</h1>
+                        <form id="bookingForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-transparent" id="name" placeholder="Your Name" required>
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-transparent" id="email" placeholder="Your Email" required>
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating date" id="date3" data-target-input="nearest">
+                                        <input type="text" class="form-control bg-transparent datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" required />
+                                        <label for="datetime">Date & Time</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <select class="form-select bg-transparent" id="select1" required>
+                                            <option value="">Select a Destination</option>
+                                            <option value="1">Việt Nam</option>
+                                            <option value="2">Châu Á</option>
+                                            <option value="3">Châu Âu</option>
+                                        </select>
+                                        <label for="select1">Destination</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control bg-transparent" placeholder="Special Request" id="message" style="height: 100px"></textarea>
+                                        <label for="message">Special Request</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-outline-light w-100 py-3" type="submit">Book Now</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="successMessage" class="text-success mt-3" style="display: none;">
+                            Your booking request has been successfully submitted!
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking End -->
+
+    <!-- JavaScript for form submission -->
+    <script>
+        document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Ngăn chặn form gửi dữ liệu để xử lý JS
+            document.getElementById('successMessage').style.display = 'block'; // Hiển thị thông báo thành công
+            this.reset(); // Đặt lại form sau khi gửi
+        });
+    </script>
+
+
+
+    <!-- Process Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center pb-4 wow fadeInUp" data-wow-delay="0.1s">
+                <h6 class="section-title bg-white text-center text-primary px-3">Tại sao nên chọn chúng tôi</h6>
+
+            </div>
+            <div class="row gy-5 gx-4 justify-content-center">
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-globe fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">
+                            Đáp ứng mọi nhu cầu của bạn</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Từ chuyến bay, lưu trú, đến điểm tham quan, bạn có thể lựa chọn</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-home fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">
+                            Tùy chọn đặt chỗ linh hoạt</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Kế hoạch thay đổi bất ngờ? Đừng lo!Đổi lịch hoặc Hoàn tiền dễ dàng.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 text-center pt-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="position-relative border border-primary pt-5 pb-4 px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center bg-primary rounded-circle position-absolute top-0 start-50 translate-middle shadow" style="width: 100px; height: 100px;">
+                            <i class="fa fa-dollar-sign fa-3x text-white"></i>
+                        </div>
+                        <h5 class="mt-4">Thanh toán an toàn và thuận tiện</h5>
+                        <hr class="w-25 mx-auto bg-primary mb-1">
+                        <hr class="w-50 mx-auto bg-primary mt-0">
+                        <p class="mb-0">Tận hưởng s nhiều cách thanh toán an toàn, bằng loại tiền thuận tiện nhất cho bạn.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Process Start -->
+
+
+
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="text-center">
+                <h6 class="section-title bg-white text-center text-primary px-3">NHẬN XÉT TỪ KHÁCH HÀNG</h6>
+                <h1 class="mb-5">Nhiều khách hàng hài lòng với tour của chúng tôi </h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel position-relative">
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="../travel-agency-html-template/img/nx01.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">CHỊ PHẠM THỊ NGUYỆT</h5>
+                    <p>Nhiệt tình, chu đáo</p>
+                    <div class="stars">★★★★★</div>
+                    <p class="mb-0">Đợt rồi minh đi tour Hàn bên này, các bạn tư vấn viên nhiệt tình, hướng dẫn viên chu đáo</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="../travel-agency-html-template/img/nx02.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">CHỊ. NGUYỄN THU HẠNH</h5>
+                    <div class="stars">★★★★★</div>
+                    <p>Chuyến đi râts tuyệt vời</p>
+                    <p class="mt-2 mb-0">Mình đã đặt tour Bangkok-Pattaya cho ba mẹ đi 5 ngày 4 đêm, ba mẹ mình rất hài lòng và khen ngợi dịch vụ của CÔng ty. Năm sau nhà mình vẫn sẽ tiếp tục đặt tour ở đây.</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="../travel-agency-html-template/img/nx03.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">ANH. VÕ QUỐC TUYÊN</h5>
+                    <div class="stars">★★★★★</div>
+                    <p>Nhiệt tình, vui vẻ</p>
+                    <p class="mt-2 mb-0">Chỗ ở và ăn uống đúng kiểu " tiền nào của đó" chất lượng lắm. Anh Nhựt trưởng đoàn nhiệt tình vui vẻ, buổi tối còn dắt cả hội trường đi vòng quanh</p>
+                </div>
+                <div class="testimonial-item bg-white text-center border p-4">
+                    <img class="bg-white rounded-circle shadow p-1 mx-auto mb-3" src="../travel-agency-html-template/img/nx04.jpg" style="width: 80px; height: 80px;">
+                    <h5 class="mb-0">ANH. LÊ TUẤN TÚ</h5>
+                    <div class="stars">★★★★★</div>
+                    <p>Rất hài lòng về dịch vụ </p>
+                    <p class="mt-2 mb-0">Mình cùng gia đình đăng ký tour Hàn tháng 11 năm rồi, rất hài lòng về dịch vụ của Công ty Fly Tour. Sắp tới gia đình mình sẽ tiếp tục sử dụng dịch vụ tại đ </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="footer">
+        <!-- Contact Information -->
+        <div class="column contact-info">
+            <h4>FLY TOUR</h4>
+            <p>📍 Trụ sở Chính: 04 Mê Linh, Phước Tiến, Nha Trang</p>
+            <p>📍 Chi Nhánh Tại TP HCM: 9/1A Lê Duânr P.Đa Kao, Quận 1, TP.HCM (Lầu 3 - tòa nhà Indochina)</p>
+            <p>📞 0973 662 254</p>
+            <p>✉️ flytour@gmail.com</p>z
+            <div class="stats">
+                <p>Đang trực tuyến: 71</p>
+                <p>Tổng lượt truy cập: 12758</p>
+            </div>
+        </div>
+
+        <!-- Tour du lịch -->
+        <div class="column">
+            <h4>TOUR DU LỊCH</h4>
+            <p><a href="destination.html">Tour trong nước</a></p>
+            <p><a href="package.html">Tour ngoài nước</a></p>
+
+        </div>
+
+        <!-- Dịch vụ khác -->
+        <div class="column">
+            <h4>DỊCH VỤ KHÁC</h4>
+            <p><a href="booking.html">Đặt phòng khách sạn</a></p>
+            <p><a href="#">Cho thuê xe</a></p>
+            <p><a href="#">Vé máy bay</a></p>
+            <p><a href="#">Vé tàu hỏa</a></p>
+        </div>
+
+        <!-- Liên kết nhanh -->
+        <div class="column">
+            <h4>LIÊN KẾT NHANH</h4>
+            <p><a href="about.html">Giới thiệu</a></p>
+            <p><a href="new.html">Tin tức</a></p>
+
+            <p><a href="contact.html">Liên hệ</a></p>
+        </div>
+
+        <!-- Chứng nhận và thanh toán -->
+        <div class="column certificates">
+            <h4>THÔNG TIN THANH TOÁN</h4>
+
+            <div class="payment">
+                <img src="../travel-agency-html-template/img/logo-paypal.png" alt="PayPal">
+                <img src="../travel-agency-html-template/img/logo-alepay.png" alt="AlePay">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer bottom-text">
+        <p>© 2020 - <a href="#">Fly Tour</a> | Thiết kế và phát triển bởi <a href="#">Huynh Nhu</a></p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

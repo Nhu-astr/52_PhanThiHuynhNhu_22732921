@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FlyTour</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+012 345 6789</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa fa-map-marker-alt me-3"></i>Fly Tours</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Tours</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="destination.html" class="dropdown-item">Tour trong nước</a>
+
+                            <a href="package.html" class="dropdown-item">Tour ngoài nước</a>
+
+                        </div>
+                    </div>
+                    <a href="booking.html" class="nav-item nav-link">Book</a>
+                    <a href="new.html" class="nav-item nav-link">News</a>
+
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <div class="DKDN">
+                    <a href="dangnhap.html" class="btn btn-primary rounded-pill py-2 px-4" id="DN">Đăng nhập</a>
+
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+            <div class="container py-5">
+                <div class="row justify-content-center py-5">
+                    <div class="col-lg-10 pt-lg-5 mt-lg-5 text-center">
+                        <h1 class="display-3 text-white animated slideInDown">Tours</h1>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+
+                                <li class="breadcrumb-item text-white active" aria-current="page">Tour trong nước</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+    <!---Chi tiết-->
+    <div class="tren">
+        <img src="../travel-agency-html-template/img/du-lich-he-nhat-ban-6n5d-1.png" alt="">
+        <h1>SÔI ĐỘNG HÈ NHẬT BẢN 2023</h1>
+        <h4>CUNG ĐƯỜNG VÀNG: KOBE - OSAKA - KYOTO - NAGOYA - YAMANASHI - TOKYO</h4>
+        <h5>Thời gian: 6 Ngày 5 Đêm <br> <br> Phương tiện: Hàng không Vietnam Airlines, bay từ TP HCM <br> <br>Khởi hành: 03, 10, 17, 24/06 ; 01, 08, 15, 22, 29/07 ; 05, 12, 19, 26/08 ; 02, 09, 16, 23/09</h5> <br>
+        <div class="anh">
+            <img src="../travel-agency-html-template/img/t1.png" alt="">
+
+        </div>
+
+    </div>
+    <table class="schedule-table">
+        <td colspan="2" class="schedule-header">NGÀY 1: TP. HCM - OSAKA</td>
+        </tr>
+        <tr>
+            <td class="time-col">21h00</td>
+            <td class="content-col">
+                <p>Hướng dẫn viên Du lịch Mở Toàn Cầu sẽ đón Quý khách tại ga đi Quốc tế, sân bay Tân Sơn Nhất làm thủ tục đáp chuyến bay VN320 của hãng hàng không Vietnam Airlines khởi hành đi Osaka (Nhật Bản) lúc 0h10.<br> Đoàn nghỉ đêm & ăn sáng trên
+                    máy bay.
+                </p>
+
+            </td>
+        </tr>
+        <!---Ngay2-->
+        <tr>
+            <td colspan="2" class="schedule-header">NGÀY 2: KOBE – OSAKA (Ăn sáng trên máy bay, ăn trưa và tối)</td>
+        </tr>
+        <tr>
+            <td class="time-col">07h30</td>
+            <td class="content-col">
+                <p>Tới sân bay Quốc tế Kansai, Quý khách làm thủ tục nhập cảnh vào Nhật Bản. Xe đón đoàn khởi hành đi Kobe – thành phố cảng nổi tiếng của vùng Kansai.</p>
+                <p>Tới Kobe, Quý khách tham quan:</p>
+                <ul>
+                    <li><strong>Bảo tàng rượu Hakutsuru Sake Brewery:</strong> Bảo tàng Nhà máy rượu Sake Hakutsuru là một địa danh du lịch nổi tiếng Kobe, Nhật Bản. Tại đây có nội dung trưng bày để hiểu rõ nhiều thông tin thú vị về quy trình chế biến rượu
+                        sake ở Nhật Bản. Tại đây, du khách sẽ được mời thử vài loại rượu sake sau khi hiểu phương pháp nấu loại rượu quan trọng này của người Nhật.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="time-col">Trưa</td>
+            <td class="content-col">
+                <p>Quý khách dùng bữa trưa với đặc sản bò Kobe nổi tiếng.</p>
+                <ul>
+                    <li><strong>Cầu cảng Kobe:</strong> Nổi tiếng với tháp cảng Kobe là một thiết kế rất độc đáo, hiếm có trên thế giới.</li>
+                    <li><strong>Công viên Meriken:</strong> Là công viên quốc gia được xây dựng vào năm 1987. Ở bên trong và xung quanh công viên có nhiều công trình với kiến trúc độc đáo như Tháp Kobe, tượng cá chép khổng lồ "Fish Dance", bảo tàng hải dương
+                        Kobe.
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="time-col">Chiều</td>
+            <td class="content-col">
+                <p>Xe đón đoàn khởi hành về Osaka, tham quan:</p>
+                <ul>
+                    <li><strong>Dạo bộ ở khu phố Dotonbori:</strong> Nằm dọc con sông Dotonbori – nổi tiếng là khu phố hào nhoáng và ăn chơi nhất tại Osaka. Dotonbori thu hút hàng triệu du khách mỗi năm với rất nhiều quán ăn, nhà hàng, club và các trung tâm
+                        mua sắm giải trí.</li>
+                    <li><strong>Mua sắm tại Shinsaibashi:</strong> Là khu mua sắm sầm uất nhất Osaka mang nét đặc trưng tổng hợp giữa Mỹ và Nhật Bản với hàng trăm cửa hàng liên kết nhau, góp mặt đầy đủ các mặt hàng.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="time-col">Tối</td>
+            <td class="content-col">
+                <p>Quý khách dùng bữa tối, nhận phòng khách sạn. Nghỉ đêm ở Osaka.</p>
+            </td>
+        </tr>
+        <!---Ngay3-->
+        <tr>
+            <td colspan="2" class="schedule-header">NGÀY 3: OSAKA – KYOTO – NAGOYA (Ăn 03 bữa)</td>
+        </tr>
+        <tr>
+            <td class="time-col">07h30</td>
+            <td class="content-col">
+                <p>Quý khách dùng bữa sáng, làm thủ tục trả phòng. Xe đón đoàn khởi hành đi Kyoto – Cố đô của Nhật Bản tham quan:</p>
+                <p>Tới Kobe, Quý khách tham quan:</p>
+                <ul>
+                    <li><strong>Bảo tàng rượu Hakutsuru Sake Brewery:</strong> Chùa Thanh Thủy (Kiyomizu): là ngôi chùa nổi tiếng nhất ở cố đô Kyoto, là một hạng mục của di sản văn hóa cố đô Kyoto đã được Unesco công nhận là di sản văn hóa thế giới năm 1994.
+                        Khuôn viên chùa có dòng suối Otowa, du khách uống 1 ngụm trong 3 dòng nước sẽ đạt được 1 trong 3 ước nguyện: Trường thọ – Học hành thành đạt – Tình duyên hạnh phúc. Rừng tre Sagano: được đánh giá là một trong những khu rừng đẹp
+                        nhất thế giới. Những âm thanh vi vu, trong trẻo mỗi khi có làn gió thổi qua được chính phủ Nhật Bản đưa vào danh sách “những âm thanh cần được giữ gìn” của nước này. Rừng tre Sagano đã đi vào bao áng thơ, tác phẩm nghệ thuật, hội
+                        họa trong và ngoài nước Nhật.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="time-col">Trưa</td>
+            <td class="content-col">
+                <p>Quý khách dùng bữa trưa với đặc sản bò Kobe nổi tiếng.</p>
+                <ul>
+                    <li><strong>Cầu cảng Kobe:</strong> Nổi tiếng với tháp cảng Kobe là một thiết kế rất độc đáo, hiếm có trên thế giới.</li>
+                    <li><strong>Công viên Meriken:</strong> Là công viên quốc gia được xây dựng vào năm 1987. Ở bên trong và xung quanh công viên có nhiều công trình với kiến trúc độc đáo như Tháp Kobe, tượng cá chép khổng lồ "Fish Dance", bảo tàng hải dương
+                        Kobe.
+                    </li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="time-col">Chiều</td>
+            <td class="content-col">
+                <p>Xe đón đoàn khởi hành về Osaka, tham quan:</p>
+                <ul>
+                    <li><strong>Dạo bộ ở khu phố Dotonbori:</strong> Nằm dọc con sông Dotonbori – nổi tiếng là khu phố hào nhoáng và ăn chơi nhất tại Osaka. Dotonbori thu hút hàng triệu du khách mỗi năm với rất nhiều quán ăn, nhà hàng, club và các trung tâm
+                        mua sắm giải trí.</li>
+                    <li><strong>Mua sắm tại Shinsaibashi:</strong> Là khu mua sắm sầm uất nhất Osaka mang nét đặc trưng tổng hợp giữa Mỹ và Nhật Bản với hàng trăm cửa hàng liên kết nhau, góp mặt đầy đủ các mặt hàng.</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td class="time-col">Tối</td>
+            <td class="content-col">
+                <p>Quý khách dùng bữa tối, nhận phòng khách sạn. Nghỉ đêm ở Osaka.</p>
+            </td>
+        </tr>
+
+    </table>
+    <!--End chi tiết-->
+
+
+    <!-- Footer Start -->
+    <div class="footer">
+        <!-- Contact Information -->
+        <div class="column contact-info">
+            <h4>FLY TOUR</h4>
+            <p>📍 Trụ sở Chính: 04 Mê Linh, Phước Tiến, Nha Trang</p>
+            <p>📍 Chi Nhánh Tại TP HCM: 9/1A Lê Duânr P.Đa Kao, Quận 1, TP.HCM (Lầu 3 - tòa nhà Indochina)</p>
+            <p>📞 0973 662 254</p>
+            <p>✉️ flytour@gmail.com</p>
+            <div class="stats">
+                <p>Đang trực tuyến: 71</p>
+                <p>Tổng lượt truy cập: 12758</p>
+            </div>
+        </div>
+
+        <!-- Tour du lịch -->
+        <div class="column">
+            <h4>TOUR DU LỊCH</h4>
+            <p><a href="destination.html">Tour trong nước</a></p>
+            <p><a href="package.html">Tour ngoài nước</a></p>
+
+        </div>
+
+        <!-- Dịch vụ khác -->
+        <div class="column">
+            <h4>DỊCH VỤ KHÁC</h4>
+            <p><a href="booking.html">Đặt phòng khách sạn</a></p>
+            <p><a href="#">Cho thuê xe</a></p>
+            <p><a href="#">Vé máy bay</a></p>
+            <p><a href="#">Vé tàu hỏa</a></p>
+        </div>
+
+        <!-- Liên kết nhanh -->
+        <div class="column">
+            <h4>LIÊN KẾT NHANH</h4>
+            <p><a href="about.html">Giới thiệu</a></p>
+            <p><a href="new.html">Tin tức</a></p>
+
+            <p><a href="contact.html">Liên hệ</a></p>
+        </div>
+
+        <!-- Chứng nhận và thanh toán -->
+        <div class="column certificates">
+            <h4>THÔNG TIN THANH TOÁN</h4>
+
+            <div class="payment">
+                <img src="../travel-agency-html-template/img/logo-paypal.png" alt="PayPal">
+                <img src="../travel-agency-html-template/img/logo-alepay.png" alt="AlePay">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer bottom-text">
+        <p>© 2020 - <a href="#">Fly Tour</a> | Thiết kế và phát triển bởi <a href="#">Huynh Nhu</a></p>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/tempusdominus/js/moment.min.js"></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
